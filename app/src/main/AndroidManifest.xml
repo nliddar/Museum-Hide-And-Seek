@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MuseumHideAndSeek"
+        tools:targetApi="31">
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.WonActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.LostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.ExhibitInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.VoteExhibitActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.nliddar.museumhideandseek.services.SeekerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.nliddar.museumhideandseek.services.HiderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.SeekerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.HiderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.SelectExhibitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.LobbyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.GameCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.GameSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nliddar.museumhideandseek.activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
