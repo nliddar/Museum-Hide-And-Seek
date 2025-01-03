@@ -29,8 +29,8 @@ Museum Hide and Seek is a multiplayer mobile application that gamifies museum ex
 - **Notifications** to keep players informed about new clues, guesses, and game updates.
 
 ### **Educational Value**
-- **Hiders:** Learn about museum exhibits while selecting and hiding.
-- **Seekers:** Explore the museum physically, using the provided clues to discover exhibits.
+- **Hiders:** Gain knowledge about museum exhibits while researching and creating clues for the game.
+- **Seekers:** Physically explore the museum, learning about exhibits to connect them with the given clues.
 - Both roles gain insights into museum collections while engaging in a collaborative game.
 
 ---
